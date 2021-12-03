@@ -12,9 +12,10 @@ $ helm upgrade --install ingress-nginx ingress-nginx \
 
 ```  
 $ kubectl create namespace hello-world
-$ kubectl apply --namespace hello-world -f dummies/hello1.yaml
-$ kubectl apply --namespace hello-world -f dummies/hello2.yaml
-$ kubectl apply --namespace hello-world -f dummies/hello_ingress.yaml
+$ kubectl apply --namespace hello-world \
+        -f dummies/hello1.yaml \
+        -f dummies/hello2.yaml \
+        -f dummies/hello_ingress.yaml
 ```
 
 ---
