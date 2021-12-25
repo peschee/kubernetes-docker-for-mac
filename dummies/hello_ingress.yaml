@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: "nginx"
   rules:
-    - host: "hw1.localdev.me"
+    - host: "hw1.localhost"
       http:
         paths:
           - pathType: Prefix
@@ -15,7 +15,7 @@ spec:
                 name: hello-kubernetes-first
                 port:
                   number: 80
-    - host: "hw2.localdev.me"
+    - host: "hw2.localhost"
       http:
         paths:
           - pathType: Prefix

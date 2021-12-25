@@ -8,11 +8,11 @@ spec:
   ingressClassName: "nginx"
   tls:
     - hosts:
-        - hw1.localdev.me
-        - hw2.localdev.me
+        - hw1.localhost
+        - hw2.localhost
       secretName: hello-world-tls
   rules:
-    - host: "hw1.localdev.me"
+    - host: "hw1.localhost"
       http:
         paths:
           - pathType: Prefix
@@ -22,7 +22,7 @@ spec:
                 name: hello-kubernetes-first
                 port:
                   number: 80
-    - host: "hw2.localdev.me"
+    - host: "hw2.localhost"
       http:
         paths:
           - pathType: Prefix
